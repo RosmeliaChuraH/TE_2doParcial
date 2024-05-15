@@ -50,13 +50,10 @@
                 <br>
                 
                 <div class="form-group">
-                    <label>Confirmado</label>
-                    <input class="form-check-input" type="checkbox" name="confirmado" 
-                           <c:if test="${estudiante.confirmado}">
-                               checked
-                           </c:if>
-                           />
-                </div>
+                            <label ><span>Confirmado</span>
+                                <input type="checkbox" name="confirmado"  value="true" <c:if test="${estudiante.confirmado}">checked</c:if>  />  
+                                </label>
+                            </div>
                 <br>
                 <div class="form-group">
                     <label>Fecha Inscripcion</label>

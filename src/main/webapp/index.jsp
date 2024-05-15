@@ -46,7 +46,14 @@
                         <td>${item.nombres}</td>
                         <td>${item.apellidos}</td>
                         <td>${item.seminario}</td>
-                        <td>${item.confirmado}</td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="confirmado" class="filled-in" <c:if
+                                           test="${item.confirmado}">checked
+                                       </c:if> />
+                                <span></span>
+                            </label>
+                        </td>
                         <td>${item.fecha_inscripcion}</td>
                         <td><a class="btn btn-warning" href="Inicio?action=edit&id=${item.id}">Editar</a></td>
                         <td><a class="btn btn-danger" href="Inicio?action=delete&id=${item.id}" onclick="return(confirm('Está seguro'))">Eliminar</a></td>
